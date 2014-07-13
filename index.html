@@ -9,6 +9,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var input = document.querySelector('input');
+        input.value = (new Date().getTime() / 1000).toFixed();
         input.select();
 
         setInterval(function() {
@@ -19,6 +20,6 @@
     </script>
   </head>
   <body>
-    <input type="text" value="<?php print time(); ?>" readonly>
+    <input type="text" readonly>
   </body>
 </html>
